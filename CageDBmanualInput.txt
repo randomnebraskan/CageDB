@@ -1,0 +1,130 @@
+use inventory
+
+db.createCollection("monitors")
+
+db.createCollection("peripherals")
+
+db.createCollection("computing")
+
+db.createCollection("electronics")
+
+db.createCollection("testequip")
+
+db.createCollection("networking")
+
+db.monitors.insert({
+	"brand":"Hewlett Packard",
+	"model":"L1940T",
+	"dimenisons":"16.3in X 10.7in X 14.3in",
+	"resolution":"1280 x 1024",
+	"inputs":["DVI", "VGA", "USB", "USB-B"],
+	"requires":"power",
+	"BYUserial":"1-33651"
+})
+
+db.monitors.insert({
+	"brand":"Hewlett Packard",
+	"model":"L1940T",
+	"dimenisons":"16.3in X 10.7in X 14.3in",
+	"resolution":"1280 x 1024",
+	"inputs":["DVI", "VGA", "USB", "USB-B"],
+	"requires":"power",
+	"BYUserial":"1-33725"
+})
+
+db.monitors.insert({
+	"brand":"Hewlett Packard",
+	"model":"L1940T",
+	"dimenisons":"16.3in X 10.7in X 14.3in",
+	"resolution":"1280 x 1024",
+	"inputs":["DVI", "VGA", "USB", "USB-B"],
+	"requires":"power"
+})
+
+db.monitors.insert({
+	"brand":"Hewlett Packard",
+	"model":"L1940T",
+	"dimenisons":"16.3in X 10.7in X 14.3in",
+	"resolution":"1280 x 1024",
+	"inputs":["DVI", "VGA", "USB", "USB-B"],
+	"requires":"power",
+	"BYUserial":"1-33671"
+})
+
+db.monitors.insert({
+	"brand":"Hewlett Packard",
+	"model":"L1940T",
+	"dimenisons":"16.3in X 10.7in X 14.3in",
+	"resolution":"1280 x 1024",
+	"inputs":["DVI", "VGA", "USB", "USB-B"],
+	"requires":"power",
+	"BYUserial":"1-018995"
+})
+
+db.networking.insert({
+	"brand":"Cisco",
+	"model":"Catalyst 3500",
+	"ports":"24",
+	"inputs":"console",
+	"requires":"power",
+})
+
+db.peripherals.insert({
+	"type":"keyboard",
+	"brand":"Hewlett Packard",
+	"model":"SDL 4000U",
+	"output":"USB",
+})
+
+db.peripherals.insert({
+	"type":"keyboard",
+	"brand":"Hewlett Packard",
+	"model":"KU-0316",
+	"output":"USB",
+})
+
+db.computing.insert({
+	"brand":"Dell",
+	"model":"Optiplex 9020",
+	"USB ports":10,
+	"other ports":["Serial", "VGA", "PS2", "mic/headphone", "Display", "Optical Drive", "RJ45"],
+	"requires":"power",
+	"MAC":"34:17:EB:9E:D4:56"
+})
+
+db.computing.insert({
+	"brand":"Dell",
+	"model":"Optiplex 9020",
+	"USB ports":10,
+	"other ports":["Serial", "VGA", "PS2", "mic/headphone", "Display", "Optical Drive", "RJ45"],
+	"requires":"power",
+	"MAC":"34:17:EB:9E:EF:83"
+})
+
+db.computing.insert({
+	"brand":"Hewlett Packard",
+	"model":"Compaq",
+	"USB2 ports":6,
+	"USB3 ports":4,
+	"other ports":["Serial", "VGA", "PS2", "mic/headphone", "Display", "Optical Drive", "RJ45"],
+	"requires":"power",
+	"MAC":"80:C1:6E:FB:4E:05"
+})
+
+db.computing.insert({
+	"brand":"Hewlett Packard",
+	"model":"Compaq",
+	"USB2 ports":6,
+	"USB3 ports":4,
+	"other ports":["Serial", "VGA", "PS2", "mic/headphone", "Display", "Optical Drive", "RJ45"],
+	"requires":"power",
+	"MAC":"80:C1:6E:F9:D4:63"
+})
+
+db.computing.insert({
+	"brand":"Digilent",
+	"model":"Cerebot MX7 cK",
+	"USB ports":1
+	"other ports":["Debug", "UART", "RJ45"],
+	"requires":"power",
+})

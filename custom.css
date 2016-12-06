@@ -1,0 +1,106 @@
+body {
+	background-image: url("https://s3.amazonaws.com/marquee-test-akiaisur2rgicbmpehea/eSyX1KNYSKCh0DUQ7FAG_Untitled-1.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #B1271E;
+}
+
+.cstmdiv {
+	background-color: palegoldenrod;
+	width: 40%;
+	margin:0 auto;
+	position: absolute;
+	left: 0;
+	right: 0;	
+	opacity: 1;	
+	-webkit-box-shadow: 7px 7px 5px 0px rgba(0, 5, 0, 0.91);
+	-moz-box-shadow:    7px 7px 5px 0px rgba(0, 5, 0, 0.91);
+	box-shadow:         7px 7px 5px 0px rgba(0, 5, 0, 0.91);
+}
+
+.cstmdiv_table {
+	background-color: palegoldenrod;
+	width: 80%;
+	margin:0 auto;
+	position: absolute;
+	left: 0;
+	right: 0;	
+	opacity: .94;	
+	-webkit-box-shadow: 7px 7px 5px 0px rgba(0, 5, 0, 0.91);
+	-moz-box-shadow:    7px 7px 5px 0px rgba(0, 5, 0, 0.91);
+	box-shadow:         7px 7px 5px 0px rgba(0, 5, 0, 0.91);
+}
+
+.p {
+	color: #B1271E;
+	font-style: normal;
+	font-size: 600%;
+	font-family: sans-serif;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.p2 {
+	color: #B1271E;
+	font-style: normal;
+	font-size: 400%;
+	font-family: sans-serif;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+}
+
+.available {
+	color: #B1271E;
+	font-style: normal;
+	font-size: 200%;
+	font-family: sans-serif;
+	text-align: center;
+	vertical-align: middle;
+	background-color: palegoldenrod;
+	opacity: 1;
+}
+
+.unavailable {
+	color: #B1271E;
+	font-style: normal;
+	font-size: 200%;
+	font-family: sans-serif;
+	text-align: center;
+	vertical-align: middle;
+	background-color: palegoldenrod;
+	opacity: .3;
+}
+
+.table_header {
+	color: palegoldenrod;
+	font-style: normal;
+	font-size: 200%;
+	font-family: sans-serif;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #B1271E;
+}
+
+.table_button {
+	background-color: #FEC382;
+	color: saddlebrown;
+	border: 3px solid saddlebrown;
+}
+
+.table_button2 {
+	background-color: #AA4F51;
+	color: #FEC382;
+	border: 3px solid #FEC382;
+}
+
+.a1, .a1:link, .a1:visited, .a1:link:active, .a1:visited:active { 
+    color: saddlebrown;
+    text-decoration: none;
+    cursor: auto;
+}
+
+
+table,th,td {
+	border: 1px solid saddlebrown;
+}

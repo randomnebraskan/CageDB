@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+
+
+<html>
+	<head>
+		<title>Check Out System</title>
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script> 
+		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+		<link rel="shortcut icon" href="/bootstrap/fonts/favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="custom.css">
+		<script type="text/javascript" src="/bootstrap/js/bootstrap.js"></script>
+		<script type="text/javascript" src="custom.js"></script>
+<!--		<script type="text/javascript" src="../connectDB.js"></script>  -->
+	</head>
+	
+	<body>
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="/"><b>BYU IT</b></a>
+		    </div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li><a href="/computing"><b>Computers</b></a></li>
+		        <li class="active"><a href="/electronics"><b>Electronics</b></a></li>
+		        <li><a href="/monitors"><b>Monitors</b></a></li>
+		        <li><a href="/networking"><b>Networking</b></a></li>
+		        <li><a href="/peripherals"><b>Peripherals</b></a></li>
+		        <li><a href="/testequip"><b>Test Equipment</b></a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse   <span class="sr-only">(current)</span> -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+
+		<div class="cstmdiv">
+		  <p class="para">
+
+		  </p>
+		</div>
+	</body>
+
+	<script>
+    $(document).ready(function()
+    	{
+    		var results = $.get('/electronics_data', function(data)
+    		{
+    			console.log(data);
+       			var STUFF = "";
+    			for (var i = data.length - 1; i >= 0; i--)
+    			{
+    				// data[i].brand;
+    				STUFF += JSON.stringify(data[i].brand);
+    				$('p.para').text(STUFF);   
+    			};
+    		});
+    	});
+	</script>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "CageDB",
+  "version": "0.0.0",
+  "description": "CageDB",
+  "main": "index.ejs",
+  "author": "Andy Nelson & Kade Clements",
+  "private": true,
+  "license": "BSD",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "3.4.8",
+    "mongodb": "3.2.10",
+    "ramda": "^0.22.1"
+  }
+}
